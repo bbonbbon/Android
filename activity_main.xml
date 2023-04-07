@@ -4,72 +4,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#002AFF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/Text1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="선택을 시작하겠습니까?" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#FD0000">
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="시작함" />
-
-    <TextView
-        android:id="@+id/Text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="좋아하는 동물을 선택하세요."
-        android:visibility="invisible" />
-
-    <RadioGroup
-        android:id="@+id/RdoGroup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:visibility="invisible">
-
-        <RadioButton
-            android:id="@+id/rdoBtn1"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="강아지" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"></LinearLayout>
 
-        <RadioButton
-            android:id="@+id/rdoBtn2"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="고양이" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFE500"
+            android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/rdoBtn3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="토끼" />
-    </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"></LinearLayout>
 
-    <ImageView
-        android:id="@+id/imageView4"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="#000000"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cat"
-        android:visibility="invisible"/>
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/Btn1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="종료"
-        android:visibility="invisible" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#8BC34A"
+            android:gravity="right"
+            android:text="버튼 1" />
 
-    <Button
-        android:id="@+id/Btn2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="처음으로"
-        android:visibility="invisible" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="left"
+            android:backgroundTint="#8BC34A"
+            android:gravity="center|left"
+            android:text="버튼2" />
 
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="right"
+            android:backgroundTint="#8BC34A"
+            android:gravity="bottom|right"
+            android:text="버튼3" />
+    </LinearLayout>
 </LinearLayout>
